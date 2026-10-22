@@ -13,6 +13,10 @@ from typing import Tuple
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
+# Valid Python logging levels
+_VALID_LOG_LEVELS = frozenset({"DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"})
+
+
 def _env(name: str, default: str) -> str:
     val = os.environ.get(f"EDUWELL_{name}")
     if val is None:
@@ -49,11 +53,25 @@ class Settings:
         return int(self.max_upload_mb * 1024 * 1024)
 
 
+def _safe_log_level(default: str = "INFO") -> str:
+    """Read LOG_LEVEL and fall back to default if the value is not a valid logging level."""
+    raw = _env("LOG_LEVEL", default).upper()
+    if raw not in _VALID_LOG_LEVELS:
+        import sys
+        print(
+            f"[settings] WARNING: LOG_LEVEL={raw!r} is not a valid logging level. "
+            f"Falling back to {default!r}.",
+            file=sys.stderr,
+        )
+        return default
+    return raw
+
+
 def load_settings() -> Settings:
     return Settings(
         host=_env("HOST", "127.0.0.1"),
         port=int(_env("PORT", "8000")),
-        log_level=_env("LOG_LEVEL", "INFO").upper(),
+        log_level=_safe_log_level("INFO"),
         max_upload_mb=float(_env("MAX_UPLOAD_MB", "25")),
         max_rows=int(_env("MAX_ROWS", "100000")),
         session_ttl_minutes=int(_env("SESSION_TTL_MINUTES", "120")),
