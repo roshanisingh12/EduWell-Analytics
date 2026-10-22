@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-fixed-variant":"#005049","surface":"#f8f9ff","outline-variant":"#bcc9c6","inverse-surface":"#213145","tertiary":"#545c72","on-tertiary":"#ffffff","on-secondary-container":"#00476e","tertiary-fixed-dim":"#bec6e0","background":"#f8f9ff","inverse-primary":"#6bd8cb","surface-container-highest":"#d3e4fe","primary":"#00685f","on-secondary":"#ffffff","primary-fixed-dim":"#6bd8cb","on-surface-variant":"#3d4947","on-tertiary-fixed-variant":"#3f465c","secondary-fixed":"#cce5ff","secondary":"#006398","on-primary":"#ffffff","surface-tint":"#006a61","surface-variant":"#d3e4fe","tertiary-fixed":"#dae2fd","on-background":"#0b1c30","primary-fixed":"#89f5e7","surface-container-high":"#dce9ff","on-primary-fixed":"#00201d","surface-container-lowest":"#ffffff","on-tertiary-container":"#fefcff","surface-dim":"#cbdbf5","on-error":"#ffffff","error-container":"#ffdad6","secondary-container":"#5bb8fe","on-tertiary-fixed":"#131b2e","error":"#ba1a1a","surface-bright":"#f8f9ff","primary-container":"#008378","on-surface":"#0b1c30","surface-container":"#e5eeff","inverse-on-surface":"#eaf1ff","secondary-fixed-dim":"#93ccff","on-error-container":"#93000a","tertiary-container":"#6c748b","on-secondary-fixed-variant":"#004b73","on-secondary-fixed":"#001d31","outline":"#6d7a77","surface-container-low":"#eff4ff","on-primary-container":"#f4fffc"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"1.5rem","space-sm":"0.5rem","gutter-sm":"1rem","space-2xl":"3rem","margin":"2rem","space-xl":"2rem","margin-mobile":"1rem","space-xs":"0.25rem","space-lg":"1.5rem","space-md":"1rem"},"fontFamily":{"stat-numeric":["Inter"],"body-lg":["Inter"],"display-lg":["Inter"],"headline-md":["Inter"],"headline-lg":["Inter"],"label-md":["Inter"],"body-md":["Inter"],"headline-xl-mobile":["Inter"],"headline-xl":["Inter"],"body-sm":["Inter"],"label-sm":["Inter"]},"fontSize":{"stat-numeric":["2rem",{"lineHeight":"2.25rem","letterSpacing":"-0.02em","fontWeight":"600"}],"body-lg":["1.125rem",{"lineHeight":"1.75rem","fontWeight":"400"}],"display-lg":["3rem",{"lineHeight":"3.5rem","letterSpacing":"-0.025em","fontWeight":"600"}],"headline-md":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"-0.01em","fontWeight":"500"}],"headline-lg":["1.5rem",{"lineHeight":"2rem","letterSpacing":"-0.015em","fontWeight":"600"}],"label-md":["0.875rem",{"lineHeight":"1.25rem","fontWeight":"500"}],"body-md":["0.9375rem",{"lineHeight":"1.5rem","fontWeight":"400"}],"headline-xl-mobile":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-xl":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"600"}],"body-sm":["0.8125rem",{"lineHeight":"1.25rem","fontWeight":"400"}],"label-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.025em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 min-h-0"><div class="px-space-lg pt-space-lg pb-space-md flex items-start gap-3"><img alt="Student Lifestyle &amp; Wellness Analyzer Logo" class="h-8 w-auto object-contain mt-0.5" src="https://lh3.googleusercontent.com/aida/AEtjO1U03navPYPKnyEEkg8r4itbvGjSg-jKrVi4ahFc100iprDI1kqoGgKTa0WXGruQp5fQkGrWm4SI5AWiimZMVz78itvd_hw-Fj0Blft2ZH7X4-UnLtkyQsSN1M8ZrvY_93Vv8gPmISpaTsEDd_8VEHhr_Qbvq5T3Sm9tqi3N-9URy8eRgshfQPciK7Z0oFN1LcOUTTkpsgxk43QUT4rfkZkYO5MucX2Y233c-R29dtLYEXafTTPMZGA29jI"/><div class="flex flex-col"><span class="font-headline-md text-headline-md font-semibold text-on-surface leading-tight">Wellness Analyzer</span><span class="font-label-sm text-label-sm text-tertiary">Statistical Research Suite</span></div></div><nav class="flex-1 px-space-md py-space-sm space-y-1 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm"><a class="flex items-center gap-3 px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="upload-validation" href="#"><span class="material-symbols-outlined text-primary text-xl">upload_file</span><span>Upload &amp; Validation</span></a><a class="flex items-center gap-3 px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="overview" href="#"><span class="material-symbols-outlined text-primary text-xl">dashboard</span><span>Overview</span></a><a class="flex items-center gap-3 px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="data-cleaning" href="#"><span class="material-symbols-outlined text-primary text-xl">cleaning_services</span><span>Data Cleaning</span></a><a class="flex items-center gap-3 px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="descriptive-statistics" href="#"><span class="material-symbols-outlined text-primary text-xl">analytics</span><span>Descriptive Statistics</span></a><a class="flex items-center gap-3 px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="correlation-regressions" href="#"><span class="material-symbols-outlined text-primary text-xl">insights</span><span>Correlation &amp; Regressions</span></a><a class="flex items-center gap-3 px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="insights-report" href="#"><span class="material-symbols-outlined text-primary text-xl">summarize</span><span>Insights &amp; Report</span></a></nav></div><div class="p-space-md flex flex-col gap-space-sm bg-surface-container/60"><div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-[0_1px_3px_0_rgba(15,23,42,0.04)]"><div class="flex items-center justify-between mb-1"><div class="flex items-center gap-1.5 min-w-0"><span class="material-symbols-outlined text-primary text-base shrink-0">table_chart</span><span class="font-label-sm text-label-sm font-semibold text-on-surface truncate">student_lifestyle_2024.csv</span></div></div><div class="font-body-sm text-body-sm text-on-surface-variant mb-2">2,000 rows • 8 features</div><button class="w-full flex items-center justify-center gap-1.5 py-1 px-2 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors" type="button"><span class="material-symbols-outlined text-sm">swap_horiz</span><span>Change dataset</span></button></div><div class="flex items-center justify-between px-1"><div class="flex items-center gap-1"><button class="p-1.5 rounded-md hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Theme Preference" type="button"><span class="material-symbols-outlined text-lg">dark_mode</span></button><button class="p-1.5 rounded-md hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Help &amp; Documentation" type="button"><span class="material-symbols-outlined text-lg">help_outline</span></button></div><span class="font-label-sm text-label-sm text-tertiary">v2.4 LTS</span></div><div class="px-1 py-1 rounded bg-surface-container-low/80"><p class="font-label-sm text-[0.6875rem] leading-tight text-on-surface-variant text-center">Educational &amp; statistical exploratory analysis only. Not for clinical or diagnostic use.</p></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md"><div class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant"><span class="material-symbols-outlined text-lg">school</span><span class="text-tertiary">/</span><span class="text-on-surface font-medium">Lifestyle Analysis Workspace</span></div><div class="h-4 w-[1px] bg-outline-variant/50"></div><div class="flex items-center gap-2 px-2.5 py-1 rounded-full bg-surface-container"><span class="h-2 w-2 rounded-full bg-primary animate-pulse"></span><span class="font-label-sm text-label-sm font-medium text-on-surface">2,000 Verified Student Records</span><span class="font-label-sm text-label-sm text-primary font-semibold">Cleaned &amp; Ready</span></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container-low"><span class="font-label-sm text-label-sm text-tertiary mr-1">Stress Levels:</span><span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-lowest font-label-sm text-label-sm font-medium text-primary"><span class="h-1.5 w-1.5 rounded-full bg-primary"></span>Low</span><span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-lowest font-label-sm text-label-sm font-medium text-secondary"><span class="h-1.5 w-1.5 rounded-full bg-secondary"></span>Moderate</span><span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-lowest font-label-sm text-label-sm font-medium text-error"><span class="h-1.5 w-1.5 rounded-full bg-error"></span>High</span></div><button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm" type="button"><span class="material-symbols-outlined text-base">picture_as_pdf</span><span>Download Report (PDF)</span></button><div class="flex items-center gap-2.5 pl-2"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDz0ZkbfoG9gfAApr4HPMM8hli3b814efbsu9NurOjwuGkExn1BsSILX8qjiE0WuXsv1Ji5yM9j8vnJg94DatIJkUqygmyGcYibN9fxDmp2VsSMIQQtH0vcw-KEUc-vwgLfe0CZive3jmKilDJ3zdd9F45UBfq7TbCtv6MreZVRGnzW11CN0oZCD9ZffAo3Ru52y1Wq4itbmj9M4WdCqMfD_8JJZybm62LXoiuBBpw7hMJVZfXg_ifwpg"/><div class="hidden lg:flex flex-col text-left"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Dr. Elena Vance</span><span class="font-label-sm text-label-sm text-tertiary leading-tight">Senior Academic Evaluator</span></div></div></div></header><main class="w-full pt-16 bg-surface px-space-lg py-space-lg flex-1"><div class="flex flex-col w-full">
+<!-- Top Executive Header Strip -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg mb-space-lg shadow-sm">
+<div class="absolute -right-12 -top-12 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-2 mb-1.5">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold tracking-wide uppercase">
+<span class="material-symbols-outlined text-sm">verified</span> Verified Synthesis
+          </span>
+<span class="text-tertiary font-label-sm text-label-sm">Cycle 2024-Q2 Analysis</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight mb-2">Synthesized Insights &amp; Evaluator Report</h1>
+<div class="flex flex-wrap items-center gap-x-4 gap-y-1 font-body-sm text-body-sm text-tertiary">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-primary">groups</span>
+<strong>Target:</strong> Academic Evaluation Committee
+          </span>
+<span class="text-outline-variant font-label-md">•</span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-secondary">dataset</span>
+<strong>Sample Size:</strong> 2,000 Verified Students
+          </span>
+<span class="text-outline-variant font-label-md">•</span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-tertiary">tune</span>
+<strong>Confidence Interval:</strong> 95% (p &lt; 0.001)
+          </span>
+</div>
+</div>
+<!-- Quick Status Badges Stack -->
+<div class="flex items-center gap-2 bg-surface-container-lowest p-2 rounded-lg shadow-sm">
+<div class="text-right px-2.5 py-1">
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Overall Wellness Index</div>
+<div class="font-stat-numeric text-stat-numeric text-primary">68.4<span class="font-label-sm text-label-sm text-tertiary font-normal">/100</span></div>
+</div>
+<div class="h-8 w-px bg-surface-container"></div>
+<div class="text-right px-2.5 py-1">
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Intervention Urgency</div>
+<div class="inline-flex items-center gap-1 text-secondary font-label-md text-label-md font-semibold mt-1">
+<span class="h-2 w-2 rounded-full bg-secondary"></span> Moderate Priority
+          </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Key Findings Section -->
+<div class="mb-space-xl">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Core Empirical Findings</h2>
+<p class="font-body-md text-body-md text-tertiary">Parametric observations cross-referenced across daily lifestyle allocations and student stress profiles.</p>
+</div>
+<div class="hidden sm:flex items-center gap-2 font-label-sm text-label-sm text-tertiary bg-surface-container px-3 py-1.5 rounded-full">
+<span class="material-symbols-outlined text-base text-primary">auto_graph</span>
+        Multivariate Regression Validated
+      </div>
+</div>
+<!-- 6 Findings Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-space-lg">
+<!-- Finding 1 -->
+<div class="group relative flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all duration-300">
+<div>
+<div class="flex items-start justify-between gap-3 mb-space-md">
+<div class="flex items-center gap-2.5">
+<span class="flex items-center justify-center w-8 h-8 rounded-lg bg-surface-container text-primary font-label-md text-label-md font-bold">01</span>
+<span class="p-2 rounded-lg bg-error-container/40 text-error">
+<span class="material-symbols-outlined text-xl">menu_book</span>
+</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-tertiary">
+              Critical Trade-off
+            </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 font-semibold">The Study Hour Paradox</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+            While academic study time actively drives GPA increases, exceeding <strong>8.0 hours/day</strong> creates steep diminishing returns and strongly triggers the High Stress threshold.
+          </p>
+<div class="bg-surface-container-low rounded-lg p-space-sm mb-space-md">
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary mb-1">Empirical Evidence</div>
+<div class="font-body-sm text-body-sm text-on-surface">
+              Students logging &gt;8.2h/day exhibit a <span class="text-error font-semibold">+68% risk elevation</span> in Tier-3 stress, while GPA yields plateau at 3.74.
+            </div>
+</div>
+</div>
+<!-- Inline Visual Thumbnail -->
+<div class="pt-space-sm bg-surface-container-lowest">
+<div class="flex items-center justify-between text-tertiary font-label-sm text-label-sm mb-1.5">
+<span>Study Hours vs Stress Rate</span>
+<span class="font-semibold text-error">Threshold: 8.0h</span>
+</div>
+<svg class="w-full h-14 overflow-visible" viewbox="0 0 240 50">
+<path class="text-outline-variant" d="M 0 40 Q 60 38 120 30 T 200 8 L 240 4" fill="none" stroke="currentColor" stroke-dasharray="2 2" stroke-width="2"></path>
+<path class="text-error" d="M 0 42 Q 70 41 130 36 T 180 20 L 240 6" fill="none" stroke="currentColor" stroke-width="2.5"></path>
+<circle class="fill-error" cx="160" cy="26" r="4"></circle>
+<line class="text-error/30" stroke="currentColor" stroke-dasharray="3 3" stroke-width="1.5" x1="160" x2="160" y1="5" y2="48"></line>
+<text class="fill-on-surface-variant font-label-sm text-[9px]" x="165" y="45">Inflection Point</text>
+</svg>
+</div>
+</div>
+<!-- Finding 2 -->
+<div class="group relative flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all duration-300">
+<div>
+<div class="flex items-start justify-between gap-3 mb-space-md">
+<div class="flex items-center gap-2.5">
+<span class="flex items-center justify-center w-8 h-8 rounded-lg bg-surface-container text-primary font-label-md text-label-md font-bold">02</span>
+<span class="p-2 rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-xl">bedtime</span>
+</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary/10 font-label-sm text-label-sm text-primary font-medium">
+              Primary Buffer
+            </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 font-semibold">Sleep as the Chief Stress Shield</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+            Sleep duration serves as the single most powerful protective lifestyle attribute. Students averaging <strong>≥7.5 hours</strong> preserve GPA integrity without elevated anxiety.
+          </p>
+<div class="bg-surface-container-low rounded-lg p-space-sm mb-space-md">
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary mb-1">Empirical Evidence</div>
+<div class="font-body-sm text-body-sm text-on-surface">
+              A daily sleep duration ≥7.5h yields a <span class="text-primary font-semibold">42% reduction</span> in severe distress odds ratio (OR = 0.58, 95% CI: 0.51-0.66).
+            </div>
+</div>
+</div>
+<!-- Inline Visual Thumbnail -->
+<div class="pt-space-sm bg-surface-container-lowest">
+<div class="flex items-center justify-between text-tertiary font-label-sm text-label-sm mb-1.5">
+<span>Severe Distress Likelihood</span>
+<span class="font-semibold text-primary">-42% Drop</span>
+</div>
+<div class="flex items-center gap-2 h-14">
+<div class="flex-1 bg-surface-container rounded-lg p-2 flex flex-col justify-end h-full">
+<div class="w-full bg-error rounded-t" style="height: 78%;"></div>
+<span class="font-label-sm text-[10px] text-tertiary mt-1 text-center">&lt;6 hrs</span>
+</div>
+<div class="flex-1 bg-surface-container rounded-lg p-2 flex flex-col justify-end h-full">
+<div class="w-full bg-secondary rounded-t" style="height: 52%;"></div>
+<span class="font-label-sm text-[10px] text-tertiary mt-1 text-center">6-7.5 hrs</span>
+</div>
+<div class="flex-1 bg-surface-container rounded-lg p-2 flex flex-col justify-end h-full">
+<div class="w-full bg-primary rounded-t" style="height: 24%;"></div>
+<span class="font-label-sm text-[10px] text-primary font-semibold mt-1 text-center">≥7.5 hrs</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Finding 3 -->
+<div class="group relative flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all duration-300">
+<div>
+<div class="flex items-start justify-between gap-3 mb-space-md">
+<div class="flex items-center gap-2.5">
+<span class="flex items-center justify-center w-8 h-8 rounded-lg bg-surface-container text-primary font-label-md text-label-md font-bold">03</span>
+<span class="p-2 rounded-lg bg-secondary/10 text-secondary">
+<span class="material-symbols-outlined text-xl">directions_run</span>
+</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-tertiary">
+              Active Relief
+            </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 font-semibold">Physical Activity Mitigates Burnout</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+            Consistent physical exertion—even modest intervals of <strong>30 to 45 minutes</strong> daily—functions as an effective dampener against high-intensity stress clusters.
+          </p>
+<div class="bg-surface-container-low rounded-lg p-space-sm mb-space-md">
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary mb-1">Empirical Evidence</div>
+<div class="font-body-sm text-body-sm text-on-surface">
+              Students with &gt;45m exercise are <span class="text-secondary font-semibold">2.3x more resilient</span> during midterm exam spikes compared to sedentary peers.
+            </div>
+</div>
+</div>
+<!-- Inline Visual Thumbnail -->
+<div class="pt-space-sm bg-surface-container-lowest">
+<div class="flex items-center justify-between text-tertiary font-label-sm text-label-sm mb-1.5">
+<span>Buffer Correlation</span>
+<span class="font-semibold text-secondary">r = -0.34</span>
+</div>
+<svg class="w-full h-14 overflow-visible" viewbox="0 0 240 50">
+<rect class="fill-surface-container" height="18" rx="3" width="60" x="0" y="32"></rect>
+<rect class="fill-surface-container-high" height="28" rx="3" width="60" x="70" y="22"></rect>
+<rect class="fill-secondary/30" height="38" rx="3" width="60" x="140" y="12"></rect>
+<rect class="fill-secondary" height="46" rx="3" width="30" x="210" y="4"></rect>
+<polyline class="text-secondary" fill="none" points="30,30 100,20 170,10 225,2" stroke="currentColor" stroke-width="2"></polyline>
+</svg>
+</div>
+</div>
+<!-- Finding 4 -->
+<div class="group relative flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all duration-300">
+<div>
+<div class="flex items-start justify-between gap-3 mb-space-md">
+<div class="flex items-center gap-2.5">
+<span class="flex items-center justify-center w-8 h-8 rounded-lg bg-surface-container text-primary font-label-md text-label-md font-bold">04</span>
+<span class="p-2 rounded-lg bg-surface-container text-tertiary">
+<span class="material-symbols-outlined text-xl">forum</span>
+</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-error-container/60 font-label-sm text-label-sm text-error font-semibold">
+              Warning Metric
+            </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 font-semibold">Social Capital Suffers First</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+            Under mounting academic demands, student social engagement is discarded before sleep or food, compounding emotional isolation and accelerating exhaustion.
+          </p>
+<div class="bg-surface-container-low rounded-lg p-space-sm mb-space-md">
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary mb-1">Empirical Evidence</div>
+<div class="font-body-sm text-body-sm text-on-surface">
+              High-stress tier logs average <span class="text-error font-semibold">2.4h/day</span> social connection vs <span class="text-primary font-semibold">4.1h/day</span> for students in the low-stress cohort.
+            </div>
+</div>
+</div>
+<!-- Inline Visual Thumbnail -->
+<div class="pt-space-sm bg-surface-container-lowest">
+<div class="flex items-center justify-between text-tertiary font-label-sm text-label-sm mb-1.5">
+<span>Social Hours by Tier</span>
+<span class="font-semibold text-tertiary">-41.5% Gap</span>
+</div>
+<div class="space-y-1.5 pt-1">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-[10px] w-12 text-tertiary">Low Stress</span>
+<div class="flex-1 bg-surface-container rounded-full h-3 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 82%;"></div>
+</div>
+<span class="font-label-sm text-[11px] font-semibold text-primary">4.1h</span>
+</div>
+<div class="flex-1 flex items-center gap-2">
+<span class="font-label-sm text-[10px] w-12 text-tertiary">High Stress</span>
+<div class="flex-1 bg-surface-container rounded-full h-3 overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 48%;"></div>
+</div>
+<span class="font-label-sm text-[11px] font-semibold text-error">2.4h</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Finding 5 -->
+<div class="group relative flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all duration-300">
+<div>
+<div class="flex items-start justify-between gap-3 mb-space-md">
+<div class="flex items-center gap-2.5">
+<span class="flex items-center justify-center w-8 h-8 rounded-lg bg-surface-container text-primary font-label-md text-label-md font-bold">05</span>
+<span class="p-2 rounded-lg bg-secondary-container/30 text-secondary">
+<span class="material-symbols-outlined text-xl">palette</span>
+</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary/10 font-label-sm text-label-sm text-secondary font-medium">
+              Synergistic
+            </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 font-semibold">Extracurricular Equilibrium</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+            Maintaining <strong>2 to 3 hours</strong> of club, artistic, or volunteer activities does not depress GPA, and produces far healthier psychological stability than single-focus regimens.
+          </p>
+<div class="bg-surface-container-low rounded-lg p-space-sm mb-space-md">
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary mb-1">Empirical Evidence</div>
+<div class="font-body-sm text-body-sm text-on-surface">
+              Active extracurricular students exhibit <span class="text-secondary font-semibold">GPA: 3.51 ± 0.3</span> with a 31% lower probability of chronic burnout episodes.
+            </div>
+</div>
+</div>
+<!-- Inline Visual Thumbnail -->
+<div class="pt-space-sm bg-surface-container-lowest">
+<div class="flex items-center justify-between text-tertiary font-label-sm text-label-sm mb-1.5">
+<span>Optimal Window</span>
+<span class="font-semibold text-secondary">2.0 – 3.0 hrs/day</span>
+</div>
+<svg class="w-full h-14 overflow-visible" viewbox="0 0 240 50">
+<path class="text-secondary" d="M 10 42 C 60 40 80 12 120 10 C 160 8 180 32 230 44" fill="none" stroke="currentColor" stroke-width="2.5"></path>
+<rect class="fill-secondary/10" height="42" rx="4" width="60" x="90" y="4"></rect>
+<circle class="fill-secondary" cx="120" cy="10" r="4"></circle>
+<text class="fill-secondary font-label-sm text-[10px] font-semibold" x="100" y="38">Sweet Spot</text>
+</svg>
+</div>
+</div>
+<!-- Finding 6 -->
+<div class="group relative flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all duration-300">
+<div>
+<div class="flex items-start justify-between gap-3 mb-space-md">
+<div class="flex items-center gap-2.5">
+<span class="flex items-center justify-center w-8 h-8 rounded-lg bg-surface-container text-primary font-label-md text-label-md font-bold">06</span>
+<span class="p-2 rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-xl">psychology_alt</span>
+</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary/10 font-label-sm text-label-sm text-primary font-medium">
+              Statistical Myth Disproven
+            </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 font-semibold">The False Stress–GPA Link</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+            Partial correlation isolating study hours proves high stress is <em>not</em> an inevitable requisite for scholastic excellence, but rather an unintended consequence of poor schedule pacing.
+          </p>
+<div class="bg-surface-container-low rounded-lg p-space-sm mb-space-md">
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary mb-1">Empirical Evidence</div>
+<div class="font-body-sm text-body-sm text-on-surface">
+              Raw r(Stress, GPA) = +0.28 vanishes to <span class="text-primary font-semibold">r = -0.04</span> when holding sleep and time-management variance constant.
+            </div>
+</div>
+</div>
+<!-- Inline Visual Thumbnail -->
+<div class="pt-space-sm bg-surface-container-lowest">
+<div class="flex items-center justify-between text-tertiary font-label-sm text-label-sm mb-1.5">
+<span>Controlling for Confounders</span>
+<span class="font-semibold text-primary">Decoupled r ≈ 0</span>
+</div>
+<div class="flex items-center justify-around h-14 bg-surface-container-low rounded-lg p-2">
+<div class="text-center">
+<div class="font-label-sm text-[10px] text-tertiary">Confounded</div>
+<div class="font-headline-md text-headline-md font-semibold text-error">+0.28</div>
+</div>
+<span class="material-symbols-outlined text-tertiary">arrow_forward</span>
+<div class="text-center">
+<div class="font-label-sm text-[10px] text-tertiary">Corrected</div>
+<div class="font-headline-md text-headline-md font-semibold text-primary">-0.04</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Methodological Limitations Section -->
+<div class="mb-space-xl">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center gap-3 mb-space-md">
+<span class="p-2 rounded-lg bg-surface-container text-tertiary">
+<span class="material-symbols-outlined text-2xl">science</span>
+</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Methodological Limitations &amp; Ethical Guardrails</h2>
+<p class="font-body-sm text-body-sm text-tertiary">Standard statistical interpretation guidelines governing cohort-level lifestyle datasets.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Caution 1 -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center font-label-sm text-label-sm font-bold text-on-surface">1</span>
+<h4 class="font-label-md text-label-md font-semibold text-on-surface">Correlation ≠ Causation</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Observed co-movements indicate associative patterns, not strictly causal mechanisms. Reallocating an arbitrary hour from academic work into sleep will not automatically generate uniform academic gains without individual context.
+            </p>
+</div>
+<div class="mt-space-md pt-2 text-tertiary font-label-sm text-[11px] flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">info</span>
+            Requires longitudinal verification
+          </div>
+</div>
+<!-- Caution 2 -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center font-label-sm text-label-sm font-bold text-on-surface">2</span>
+<h4 class="font-label-md text-label-md font-semibold text-on-surface">Self-Reported &amp; Synthetic Nuances</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Temporal logs are calibrated from retrospective student estimates subject to rounding heuristic errors, recall bias, and social desirability distortion in high-achieving peer environments.
+            </p>
+</div>
+<div class="mt-space-md pt-2 text-tertiary font-label-sm text-[11px] flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">fact_check</span>
+            Cleaned &amp; imputed with MICE package
+          </div>
+</div>
+<!-- Caution 3 -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="w-6 h-6 rounded-full bg-error-container/60 flex items-center justify-center font-label-sm text-label-sm font-bold text-error">3</span>
+<h4 class="font-label-md text-label-md font-semibold text-error">Strict Non-Diagnostic Notice</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              These insights represent exploratory lifestyle analytics calibrated exclusively for administrative and advisory guidance. They must <strong>never</strong> be interpreted as psychological or psychiatric evaluations.
+            </p>
+</div>
+<div class="mt-space-md pt-2 text-error font-label-sm text-[11px] flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">health_and_safety</span>
+            Academic Advisory scope only
+          </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Split: Evaluator Notes & Action Suite -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Evaluator Sign-off & Notes Card (7 cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2.5">
+<span class="p-2 rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-xl">rate_review</span>
+</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Evaluator Feedback &amp; Institutional Notes</h3>
+<span class="font-label-sm text-label-sm text-tertiary">Formal record for accreditation &amp; student life review</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">
+<span class="h-1.5 w-1.5 rounded-full bg-primary animate-ping"></span>
+          Draft Ready
+        </span>
+</div>
+<!-- Quick Evaluator Context Snippet -->
+<div class="flex items-center gap-3 p-2.5 mb-space-md rounded-lg bg-surface-container-low">
+<img class="w-10 h-10 rounded-full object-cover shrink-0" data-alt="A portrait of Dr Elena Vance, senior academic researcher, warm lighting, scholarly office backdrop, professional academic evaluator photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfboCDQtjuJqvj0J71DSc8Yvg4UBMEyDV0BF3nHBSPwH4lSNp5XIbsyA9uXJfPHeZ-IneaCtrFA8y7YTnPx7XjZ39D5QkQDNeLdNyv8mV5L6iTORKAAO9tte3iRmaxFzow_oNegictV1DrCB1oU9fJUoq542AYH3-Bj7KOR97NXlO3cpVTeTsKJoouf9qouqVc-9QGY8ADTc4vyn3TrqBq6via2H1TKbO6S4GQVAuTtZo5h7C3yRoscw"/>
+<div class="min-w-0 flex-1">
+<div class="font-label-md text-label-md font-semibold text-on-surface truncate">Dr. Elena Vance, Senior Academic Evaluator</div>
+<div class="font-label-sm text-label-sm text-tertiary truncate">Faculty of Behavioral Science • Wellness Curriculum Oversight</div>
+</div>
+<div class="text-right shrink-0 font-label-sm text-label-sm text-tertiary">
+          Today, 14:32 EST
+        </div>
+</div>
+<!-- Notes Form Area -->
+<div class="space-y-space-md">
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-tertiary mb-1" for="evaluator-summary">
+            Executive Summary for Department Dean
+          </label>
+<textarea class="w-full rounded-md bg-surface-container-low p-space-sm font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest resize-none" id="evaluator-summary" placeholder="Provide overarching qualitative impression..." rows="3">The lifestyle dataset cleanly confirms our institutional hypothesis: student burnout during examination cycles stems from schedule concentration rather than raw academic rigor. Recommending a campus-wide policy capping continuous mandatory study blocks at 6 hours and protecting sleep schedules.</textarea>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-tertiary mb-1">
+              Curricular Recommendation
+            </label>
+<select class="w-full rounded-md bg-surface-container-low p-space-sm font-label-md text-label-md text-on-surface focus:outline-none">
+<option selected="">Institutional Intervention Recommended</option>
+<option>Minor Advising Adjustment</option>
+<option>No Action (Observation Mode)</option>
+<option>Urgent Taskforce Escalation</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-tertiary mb-1">
+              Follow-up Review Target
+            </label>
+<div class="flex items-center bg-surface-container-low rounded-md px-3 py-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-base text-tertiary mr-2">calendar_today</span>
+              Fall Semester Midterms (Oct 2024)
+            </div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-2">
+<input checked="" class="rounded text-primary focus:ring-0 w-4 h-4" id="digital-signature" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-tertiary cursor-pointer" for="digital-signature">
+              Affix cryptographic digital signature (Vance_E_auth_2024.crt)
+            </label>
+</div>
+<button class="px-3.5 py-1.5 rounded-md bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md font-medium" onclick="alert('Evaluator feedback state captured successfully.')" type="button">
+            Save Notes
+          </button>
+</div>
+</div>
+</div>
+<!-- Action & Export Suite (5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Primary Action Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Action &amp; Export Suite</h3>
+<p class="font-body-sm text-body-sm text-tertiary mb-space-md">Generate finalized artifacts or recycle the analytics pipeline.</p>
+<div class="space-y-space-sm">
+<!-- Button 1: Download PDF -->
+<button class="w-full flex items-center justify-between p-3.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-all group shadow-sm" onclick="window.print()" type="button">
+<div class="flex items-center gap-3">
+<span class="p-2 rounded-md bg-on-primary/10 text-on-primary">
+<span class="material-symbols-outlined text-xl">picture_as_pdf</span>
+</span>
+<div class="text-left">
+<div class="font-label-md text-label-md font-semibold leading-tight">Download Executive Report</div>
+<div class="font-body-sm text-body-sm text-on-primary/80">Formatted 12-page PDF document</div>
+</div>
+</div>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">download</span>
+</button>
+<!-- Button 2: Download CSV -->
+<button class="w-full flex items-center justify-between p-3.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors group" onclick="alert('Cleaned dataset student_lifestyle_cleaned_n2000.csv ready for download.')" type="button">
+<div class="flex items-center gap-3">
+<span class="p-2 rounded-md bg-surface-container text-secondary">
+<span class="material-symbols-outlined text-xl">table_chart</span>
+</span>
+<div class="text-left">
+<div class="font-label-md text-label-md font-semibold leading-tight">Download Cleaned Dataset</div>
+<div class="font-body-sm text-body-sm text-tertiary">CSV • 2,000 records • 8 normalized fields</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-tertiary group-hover:translate-x-1 transition-transform">file_download</span>
+</button>
+<!-- Button 3: Restart Pipeline -->
+<button class="w-full flex items-center justify-between p-3.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors group" onclick="confirm('Restart pipeline? You will be navigated back to Upload &amp; Validation.')" type="button">
+<div class="flex items-center gap-3">
+<span class="p-2 rounded-md bg-surface-container text-primary">
+<span class="material-symbols-outlined text-xl">upload_file</span>
+</span>
+<div class="text-left">
+<div class="font-label-md text-label-md font-semibold leading-tight">Upload New Dataset</div>
+<div class="font-body-sm text-body-sm text-tertiary">Reset workspace &amp; re-validate CSV</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-tertiary group-hover:translate-x-1 transition-transform">restart_alt</span>
+</button>
+</div>
+</div>
+<!-- Quick Distribution Summary Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary font-semibold">Cohort Stress Breakdown</span>
+<span class="font-label-sm text-label-sm text-tertiary">n = 2,000</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container flex overflow-hidden mb-3">
+<div class="bg-primary h-full" style="width: 38%;" title="Low Stress: 38% (760 students)"></div>
+<div class="bg-secondary h-full" style="width: 44%;" title="Moderate Stress: 44% (880 students)"></div>
+<div class="bg-error h-full" style="width: 18%;" title="High Stress: 18% (360 students)"></div>
+</div>
+<div class="grid grid-cols-3 gap-2 text-center">
+<div class="p-1.5 rounded-md bg-surface-container-low">
+<div class="font-label-sm text-label-sm text-primary font-bold">38%</div>
+<div class="font-label-sm text-[11px] text-tertiary">Low Stress</div>
+</div>
+<div class="p-1.5 rounded-md bg-surface-container-low">
+<div class="font-label-sm text-label-sm text-secondary font-bold">44%</div>
+<div class="font-label-sm text-[11px] text-tertiary">Moderate</div>
+</div>
+<div class="p-1.5 rounded-md bg-surface-container-low">
+<div class="font-label-sm text-label-sm text-error font-bold">18%</div>
+<div class="font-label-sm text-[11px] text-tertiary">High Risk</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

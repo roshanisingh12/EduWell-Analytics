@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EduWell Analytics</title>
+  <meta name="description" content="Statistical analysis of student lifestyle, stress and academic performance data.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0..1,0&display=block">
+  <link rel="stylesheet" href="/assets/app.css?v=__VERSION__">
+  <script src="/assets/theme.js?v=__VERSION__"></script>
+</head>
+<body>
+  <a class="skip-link" href="#view">Skip to content</a>
+
+  <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+    <div class="brand">
+      <img src="/assets/logo.svg" alt="" width="36" height="36">
+      <div>
+        <div class="brand-name">EduWell Analytics</div>
+        <div class="brand-sub">Student Wellness Research Suite</div>
+      </div>
+    </div>
+    <nav class="nav" id="nav">
+      <a href="#/upload" data-route="upload"><span class="icon" aria-hidden="true">upload_file</span>Upload &amp; Validation</a>
+      <a href="#/overview" data-route="overview"><span class="icon" aria-hidden="true">dashboard</span>Overview</a>
+      <a href="#/cleaning" data-route="cleaning"><span class="icon" aria-hidden="true">cleaning_services</span>Data Cleaning</a>
+      <a href="#/statistics" data-route="statistics"><span class="icon" aria-hidden="true">analytics</span>Descriptive Statistics</a>
+      <a href="#/correlations" data-route="correlations"><span class="icon" aria-hidden="true">insights</span>Correlation &amp; Regression</a>
+      <a href="#/insights" data-route="insights"><span class="icon" aria-hidden="true">summarize</span>Insights &amp; Report</a>
+    </nav>
+    <div class="sidebar-foot">
+      <div class="dataset-box">
+        <div class="dataset-name"><span class="icon" aria-hidden="true">table_chart</span><span id="sidebar-filename">Loading dataset…</span></div>
+        <div class="dataset-meta" id="sidebar-meta">&nbsp;</div>
+        <a class="btn btn-quiet btn-block btn-sm" href="#/upload"><span class="icon" aria-hidden="true">swap_horiz</span>Change dataset</a>
+      </div>
+      <div class="sidebar-tools">
+        <button class="icon-btn" id="theme-toggle" type="button" title="Toggle dark mode" aria-label="Toggle dark mode"><span class="icon" aria-hidden="true">dark_mode</span></button>
+        <button class="icon-btn" id="help-open" type="button" title="Help" aria-label="Help"><span class="icon" aria-hidden="true">help_outline</span></button>
+        <span class="version">v__VERSION__</span>
+      </div>
+      <p class="disclaimer">Educational &amp; statistical exploratory analysis only. Not for clinical or diagnostic use.</p>
+    </div>
+  </aside>
+  <div class="scrim" id="scrim" hidden></div>
+
+  <div class="shell">
+    <header class="topbar">
+      <button class="icon-btn menu-btn" id="menu-open" type="button" aria-label="Open navigation" aria-controls="sidebar" aria-expanded="false"><span class="icon" aria-hidden="true">menu</span></button>
+      <div class="topbar-status" id="topbar-status">
+        <span class="pulse" aria-hidden="true"></span>
+        <span id="topbar-records">Loading…</span>
+        <span class="topbar-badge" id="topbar-badge"></span>
+      </div>
+      <div class="topbar-actions">
+        <div class="legend-inline" aria-label="Stress level colours">
+          <span class="legend-dot low"></span>Low
+          <span class="legend-dot moderate"></span>Moderate
+          <span class="legend-dot high"></span>High
+        </div>
+        <a class="btn btn-primary btn-sm" href="/api/export-report?format=txt" download><span class="icon" aria-hidden="true">download</span><span class="hide-sm">Download report</span></a>
+      </div>
+    </header>
+
+    <main id="view" class="view" tabindex="-1" aria-live="polite"></main>
+  </div>
+
+  <div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+
+  <dialog class="dialog" id="help-dialog" aria-labelledby="help-title">
+    <div class="dialog-head">
+      <h2 id="help-title">How EduWell Analytics works</h2>
+      <button class="icon-btn" type="button" data-close aria-label="Close"><span class="icon" aria-hidden="true">close</span></button>
+    </div>
+    <div class="dialog-body">
+      <ol class="steps">
+        <li><strong>Upload</strong> a CSV with the eight required columns, or use the synthetic sample (2,000 generated students).</li>
+        <li><strong>Cleaning</strong> removes duplicates, incomplete rows, unknown stress labels and out-of-range values. Nothing is imputed.</li>
+        <li><strong>Statistics</strong> cover means, spread, skewness, stress-group comparisons (ANOVA, η²) and Pearson/Spearman correlations.</li>
+        <li><strong>Insights</strong> are generated from the computed numbers and can be downloaded as text, CSV, JSON or a ZIP bundle with figures.</li>
+      </ol>
+      <p>Uploads are processed on the server, kept only for your browser session (they expire after a period of inactivity) and are never shown to other visitors.</p>
+      <p class="muted">The results describe statistical relationships in the data. They are not a diagnosis of any mental-health condition.</p>
+      <p><a href="/api/docs" target="_blank" rel="noopener">API documentation</a></p>
+    </div>
+  </dialog>
+
+  <noscript><p class="noscript">EduWell Analytics needs JavaScript to display the dashboard.</p></noscript>
+  <script src="/assets/app.js?v=__VERSION__"></script>
+</body>
+</html>
